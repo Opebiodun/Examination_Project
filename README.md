@@ -76,3 +76,29 @@ This Bash script automates the deployment of a LAMP stack and a Laravel applicat
 
 Customization and extension of the script are possible to meet specific deployment requirements. Troubleshooting issues, if encountered, may require reviewing the script's output and checking the Laravel application's configurations.
 
+
+## Ansible Playbook Documentation: Deploy and Test Laravel Application
+
+## Introduction
+This document provides documentation for the Ansible playbook `slave-playbook.yml`. The playbook is designed to automate the deployment of a Laravel application and verify its accessibility through the VM's IP address for slave server. The playbook contains two primary tasks: executing a bash script and checking the application's accessibility.
+
+## Prerequisites
+Before using this playbook, make sure you have the following prerequisites in place:
+
+- Ansible installed on your local machine which would be the master server after setup according to the documentation above.
+- Access to the target server (Slave node) from master server with SSH(without prompting for password) key-based authentication.
+- A Laravel application ready for deployment on the slave server.
+- The path to a bash script that performs the necessary deployment steps.
+
+## Usage
+
+To use this playbook, follow these steps:
+
+1. **Edit the Playbook**:
+   - Open the `slave-playbook.yml` playbook in a text editor (nano or any other test editor desired).
+   
+2. **Run the Playbook**:
+   Execute the playbook using the following command:
+   
+   RUN
+   ansible-playbook slave-playbook.yml
