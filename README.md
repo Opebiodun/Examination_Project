@@ -1,4 +1,4 @@
-# Documentation: Automate the provisioning of two Ubuntu-based servers,"Master" and "Slave", using Vagrant and deployment of LAMP Stack and Laravel Application on Ubuntu 
+## Documentation: Automate the provisioning of two Ubuntu-based servers,"Master" and "Slave", using Vagrant and deployment of LAMP Stack and Laravel Application on Ubuntu 
 
 ## Introduction
 
